@@ -1,0 +1,10 @@
+services:
+  web:
+    image: nginx:latest  
+    container_name: html01
+    ports:
+      - "9090:80" 
+    volumes:
+      - . :/usr/share/nginx/FinalProject 
+    networks:
+      - webnet
